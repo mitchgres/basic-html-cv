@@ -10,26 +10,7 @@
 
     <title>Mitchell Gresham - Example Portfolio</title>
 
-    <style> /* Internal CSS Stylesheet */
-
-        body {
-            background-color: #F9F7F7;
-        }
-
-        hr {
-            border: none;
-            border-top-width: 5px;
-            border-top-color: #112D4E;
-            border-top-style: dotted;
-            width: 5%;
-        }
-
-        img {
-            height: 200px;
-            width: 200px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link To Our Stylesheet For CSS-->
 </head>
 
 <body>
@@ -39,14 +20,14 @@
         <tbody>
             <tr>
                 <td>
-                    <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFzSc7gqCa1Lg/profile-displayphoto-shrink_200_200/0/1647858607256?e=2147483647&v=beta&t=nPTrVJ37tjXXamDDSIMsG0EaUOfiti6Ml0BseWqKjGA"
-                    alt="Picture of Mitchell M. Gresham">
+                    <img id="profile-image" src="https://media-exp1.licdn.com/dms/image/C4E03AQFzSc7gqCa1Lg/profile-displayphoto-shrink_200_200/0/1647858607256?e=2147483647&v=beta&t=nPTrVJ37tjXXamDDSIMsG0EaUOfiti6Ml0BseWqKjGA"
+                    alt="Picture of Mitchell M. Gresham"> <!-- ID User Since Only Occurs Once -->
                 </td>
                 
                 <td>
-                    <h1><strong>Mitchell M. Gresham</strong></h1>
-                    <p><em>Web Developer w/ Experience In Python & Java</em></p>
-                    <p><em>Hi! I'm Mitchell M. Gresham. I'm a aspiring web developer with a focus on server-side technologies such as Django with a focus on developing PWA (Progressive
+                    <h1 class="home-page-header header-action"><strong>Mitchell M. Gresham</strong></h1> <!-- Multiple Classes In Same Class Reference-->
+                    <p class="home-page-para"><em>Web Developer w/ Experience In Python & Java</em></p>
+                    <p class="home-page-para"><em>Hi! I'm Mitchell M. Gresham. I'm a aspiring web developer with a focus on server-side technologies such as Django with a focus on developing PWA (Progressive
                         Web Applications with Google Lighthouse.
                     </em></p>
                 </td>
@@ -58,7 +39,7 @@
 
     <hr >
 
-    <h3>Education</h3>
+    <h3 class="home-page-subtitle">Education</h3>
     <table>
         <thead>
             <tr>
@@ -98,7 +79,7 @@
     </table>
     <hr>
 
-    <h3>Skills</h3>
+    <h3 class="home-page-subtitle">Skills</h3>
     <table cellspacing="20">
         <thead>
 
@@ -132,8 +113,8 @@
 
 
 
-    <h3><a href="https://www.linkedin.com/in/mitchell-gresham-885095235/">Contact On LinkedIn</a></h3>
-    <h3><a href="contact.html">More Contact Options</a></h3>
+    <h3 class="home-page-subtitle"><a href="https://www.linkedin.com/in/mitchell-gresham-885095235/">Contact On LinkedIn</a></h3>
+    <h3 class="home-page-subtitle"><a href="contact.html">More Contact Options</a></h3>
 </body>
 
 </html>

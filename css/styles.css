@@ -1,0 +1,57 @@
+/*
+SYNTAX - selector(who) {property(what):value(how)}
+*/
+
+/* The standard practice for organizing your properties in a single selector is CSS is by alphabetical order. */
+
+/* TAG SELECTORS */
+
+body {
+    background-color: #c7c7c7;
+}
+
+hr {
+    border: none;
+    border-top-width: 5px;
+    border-top-color: #112D4E;
+    border-top-style: dotted;
+    width: 5%;
+}
+
+/* CLASSES */
+
+.home-page-header {
+    color: #112D4E;
+    font-size: x-large;
+}
+
+.home-page-subtitle {
+    color: #3F72AF;
+    font-size: large;
+}
+
+.home-page-para {
+    color: #112D4E;
+    font-size: medium;
+}
+
+.header-action:hover {
+    /* Whenever the header is hovered over the backgroud of it will changes into this lighter blue. */
+    color: #3F72AF;
+}
+
+/* ID */
+#profile-image {
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+}
+
+#contact-form {
+    border: 5px solid #112D4E;
+}
+
+/* You can only have one instance of an ID per page, while your able to reuse a class as many times as you want. So you'll only use an ID for an element that you'll only use once like a nav-bar
+compared to a class which you can use to style something like text.  */
+
+/* You can combine two classes together by just putting them next to each other */

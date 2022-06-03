@@ -1,57 +1,183 @@
-/*
-SYNTAX - selector(who) {property(what):value(how)}
-*/
-
-/* The standard practice for organizing your properties in a single selector is CSS is by alphabetical order. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Tangerine&display=swap');
 
 /* TAG SELECTORS */
 
 body {
-    background-color: #c7c7c7;
+    text-align: center;
+    margin: 0%;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 hr {
-    border: none;
-    border-top-width: 5px;
-    border-top-color: #112D4E;
-    border-top-style: dotted;
+    border-style: dotted none none none;
+    border-width: 5px;
+    border-color: rgb(28, 60, 72);
     width: 5%;
+    margin-top: 75px;
+    margin-bottom: 75px;
 }
 
-/* CLASSES */
 
-.home-page-header {
-    color: #112D4E;
-    font-size: x-large;
+/* CLASS SELECTORS */
+
+.header {
+    background-color: rgb(28, 60, 72);
+    padding-top: 50px;
+    position: relative;
 }
 
-.home-page-subtitle {
-    color: #3F72AF;
-    font-size: large;
+.subtitle {
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: rgb(228, 228, 228);
 }
 
-.home-page-para {
-    color: #112D4E;
-    font-size: medium;
+.cloud {
+    position: absolute;
 }
 
-.header-action:hover {
-    /* Whenever the header is hovered over the backgroud of it will changes into this lighter blue. */
-    color: #3F72AF;
-}
-
-/* ID */
-#profile-image {
+.img-container {
+    text-align: center;
+    margin-top: 75px;
     border-radius: 100%;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    overflow: hidden;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#contact-form {
-    border: 5px solid #112D4E;
+.img-container-ico {
+    margin-right: 30px;
+    text-align: center;
+    height: 150px;
+    width: 150px;
 }
 
-/* You can only have one instance of an ID per page, while your able to reuse a class as many times as you want. So you'll only use an ID for an element that you'll only use once like a nav-bar
-compared to a class which you can use to style something like text.  */
+.ico-left {
+    float: left;
+}
 
-/* You can combine two classes together by just putting them next to each other */
+.ico-right {
+    float: right;
+}
+
+.body-subtitle {
+    color: rgb(28, 60, 72);
+    font-size: 1.5rem;
+}
+
+.body-subtitle-large {
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(28, 60, 72);
+    width: 50%;
+    font-size: 2.5rem;
+}
+
+.footer-link {
+    color: rgb(228, 228, 228);
+    font-size: 1rem;
+}
+
+.bottom-container {
+    padding: 20px;
+    background-color: rgb(28, 60, 72);
+}
+
+.skill-row {
+    line-height: 2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 50%;
+    text-align: left;
+}
+
+.contact-button {
+    position: relative;
+    background: rgb(28, 60, 72);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    color: rgb(228, 228, 228);
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    top: 25px
+}
+
+.contact-button:hover {
+    position: relative;
+    background: rgb(42, 90, 107);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    color: rgb(228, 228, 228);
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    top: 25px
+}
+
+.middle-container {
+    margin-bottom: 100px;
+}
+
+
+/* ID SELECTORS */
+
+#main-page-title {
+    margin-top: 50px;
+    font-size: 1.50rem;
+    color: azure;
+}
+
+#main-page-subtitle-emphasis {
+    font-weight: bold;
+    color: azure;
+    text-decoration: underline;
+}
+
+#main-page-title-emphasis {
+    font-family: 'Tangerine', sans-serif;
+    font-size: 5.625rem;
+    /* em will add together values from body while rem will only take values from the root, doesn't get affected by upstream changes */
+}
+
+#profile-picture {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#icon-img {
+    margin-top: 20px;
+    object-fit: contain;
+    height: 70%;
+    width: 70%;
+}
+
+#top-cloud {
+    top: 30px;
+    right: 20%;
+}
+
+#bottom-cloud {
+    top: 300px;
+    left: 20%;
+}
+
+#mountain {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#text-div {
+    padding: 50px;
+}
+
+#link-spacer-main-page-footer {
+    margin-left: 10px;
+}

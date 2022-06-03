@@ -1,120 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mitchell M. Gresham">
-    <meta name="description" content="Basic website design based in HTML and CSS that highlights some features of the language. ">
-    <meta name="Mitchell Gresham">
+    <meta name="description" content="Hi! I'm Mitchell M. Gresham an aspiring web developer with
+    an interest in PWA (Progressive Web Applications). Come and see what we can do together">
+    <meta name="keywords" content="PWA, Web Developer for Hire">
 
-    <title>Mitchell Gresham - Example Portfolio</title>
+    <title>Mitchell M. Gresham - Web Developer</title>
 
-    <link rel="stylesheet" href="css/styles.css"> <!-- Link To Our Stylesheet For CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="imgs/favicon.ico">
+    <!-- Add Better Favicon Later -->
+
 </head>
 
 <body>
-    <table cellspacing="20">
-        <thead>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <img id="profile-image" src="https://media-exp1.licdn.com/dms/image/C4E03AQFzSc7gqCa1Lg/profile-displayphoto-shrink_200_200/0/1647858607256?e=2147483647&v=beta&t=nPTrVJ37tjXXamDDSIMsG0EaUOfiti6Ml0BseWqKjGA"
-                    alt="Picture of Mitchell M. Gresham"> <!-- ID User Since Only Occurs Once -->
-                </td>
-                
-                <td>
-                    <h1 class="home-page-header header-action"><strong>Mitchell M. Gresham</strong></h1> <!-- Multiple Classes In Same Class Reference-->
-                    <p class="home-page-para"><em>Web Developer w/ Experience In Python & Java</em></p>
-                    <p class="home-page-para"><em>Hi! I'm Mitchell M. Gresham. I'm a aspiring web developer with a focus on server-side technologies such as Django with a focus on developing PWA (Progressive
-                        Web Applications with Google Lighthouse.
-                    </em></p>
-                </td>
-            </tr>
-        </tbody>
-        <tfoot>
-        </tfoot>
-    </table>
+    <!---
+        You can change the way which elements are dispalyed an make elements like <p> display as Inline with the display selector in CSS.
 
-    <hr >
+        Block Elements - Block Other Elements From Sitting Next To It (Left / Right)
+            - Common Block Elements: <p> <h1> <div> <ol> <ul> <li> <form>
+        
+        Inline Element - Only Takes Up As Much Space As It Needs To & Can Be Use Inside Block Elements Like <p> & Appear Next To Each Other
+            - Common Inline Elements: <span> <img> <a>
+            - Drawback: You are unable to specify width, even know your able to with Block Elements
 
-    <h3 class="home-page-subtitle">Education</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Credit Awarded</th>
-            </tr>
-        </thead>
+        Inline Block Element - Best Of Both Worlds w/ Inline & Block As You Can Specify Width & Also Use Them On The Same Line
 
-        <tbody>
-            <tr>
-                <td>2020-Present</td>
-                <td>
-                    <ul>
-                        <li><strong>Ivy Tech Community College</strong></li>
-                        <ul>
-                            <li><em>GPA: 3.80</em> | AS of Science in Software Development</li>
-                        </ul>
-                    </ul>
-                </td>
-            </tr>
+        None - Doesn't Show Element. Pretends Like It Doesn't Exist In Website.
+                - You can also use the visibility selector and it will make the element disappear visually, though the document will still act like its there e.g if you hid a word in a 
+                  paragraph the word will still look like it is there, but you won't be able to see it.
+        
+    -->
 
-            <tr>
-                <td>2020-Present</td>
-                <td>
-                    <ul>
-                        <li><strong>Terre Haute South High School</strong></li>
-                        <ul>
-                            <li><em>GPA: 3.98</em> | Member of Debate Club & FIRST Robotics Team Field Technician</li>
-                        </ul>
-                    </ul>
-                </td>
-            </tr>
-        </tbody>
+    <div class="header">
+        <div id="text-div">
+            <h1 id="main-page-title">HI! I'M <span id="main-page-title-emphasis">Mitchell Gresham</span></h1>
+            <h2 class="subtitle">I MAKE WEBSITE THAT... <span id="main-page-subtitle-emphasis">INSPIRE</span></h2>
+        </div>
 
-        <tfoot>
-        </tfoot>
-    </table>
-    <hr>
+        <img src="imgs/cloud.png" alt="Cloud Image" class="cloud" id="top-cloud">
+        <img src="imgs/cloud.png" alt="Cloud Image" class="cloud" id="bottom-cloud">
 
-    <h3 class="home-page-subtitle">Skills</h3>
-    <table cellspacing="20">
-        <thead>
+        <img src="imgs/mountain.png" alt="Mountain Image" id="mountain">
+    </div>
 
-        </thead>
-
-        <tbody>
-            <tr>
-                <td style="text-align:right;">Python(3)</td>
-                <td>* * * * *</td>
-
-                <td style="text-align:right;">HTML(5)</td>
-                <td>* * *</td>
-            </tr>
-
-            <tr>
-                <td style="text-align:right;">Java(JDK 19)</td>
-                <td>* * * * *</td>
-
-                <td style="text-align:right;">CSS(3)</td>
-                <td>* * * *</td>
-            </tr>
-
-        </tbody>
-
-        <tfoot>
-
-        </tfoot>
-
-    </table>
-    <hr>
+    <div class="middle-container">
+        <div class="profile">
+            <div class="img-container">
+                <img id="profile-picture" src="imgs/nice picture of me_adobespark (better)_adobespark.jpg" alt="Picture of Mitchell Gresham">
+            </div>
+            <h2 class="body-subtitle-large">A Little About Myself...</h2>
+            <p>Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
+        </div>
+        <hr>
+        <div class="skills">
+            <h2 class="body-subtitle-large">My Skills.</h2>
+            <div class="skill-row">
+                <div class="img-container-ico ico-left">
+                    <img id="icon-img" src="imgs/code.png" alt="Computer With Programming">
+                </div>
+                <h3 class="body-subtitle">Lorem & Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+            </div>
+            <div class="skill-row">
+                <div class="img-container-ico ico-right">
+                    <img id="icon-img" src="imgs/coffee-cup.png" alt="Coffee Cup">
+                </div>
+                <h3 class="body-subtitle">Lorem Ipsum Dolor</h3>
+                <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="contact-me ">
+            <h2 class="body-subtitle-large">Get In Touch</h2>
+            <h3 class="body-subtitle">Lorem ipsum dolor sit amet, non elit.</h3>
+            <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
+            <a class="contact-button" href="mailto:name@email.com">CONTACT ME</a>
+        </div>
+    </div>
 
 
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+        <a class="footer-link" id="link-spacer-main-page-footer" href="https://twitter.com/">Twitter</a>
+        <a class="footer-link" id="link-spacer-main-page-footer" href="https://www.appbrewery.co/">Website</a>
+        <p class="footer-link">© Mitchell M. Gresham</p>
+    </div>
 
-    <h3 class="home-page-subtitle"><a href="https://www.linkedin.com/in/mitchell-gresham-885095235/">Contact On LinkedIn</a></h3>
-    <h3 class="home-page-subtitle"><a href="contact.html">More Contact Options</a></h3>
 </body>
 
 </html>
+
+<!-- Predefined Rules About CSS Positioning
+    1. Content Is Everything
+        - For example with block elements height is determined by content and in inline then width and height is determined by content.
+    2. Order Comes From Code
+        - How you structure your HTML File will determine how it is displayed. e.g. if you put an image at the top of your website then it'll display first.
+    3. Children Sit On Top Of Parents
+        - If you put a child inside a parent element like a <div> then the child elements lets say a <p> will go on top of the parent, by default they will be on top of parent using the 
+            z axis.
+        - You can use the position selector to change the default layout, there are four types.
+            - Static - Go along w/ HTML Rules (Only HTML)
+            - Realative - Positions elements we select realative to how it would have been positioned had it been static. 
+                - Example:
+                    img {
+                        position: relative
+                        left: 30px
+                    }
+                    */ this will push the element 30px to the right of where it would have been if the image were to be static */
+                        - You can move from top, bottom, left, and right. <-- Coordinate Properties
+                        - Realative elements movement doesn't change the behavior of the webpage. e.g website behaves like it was static, but visually it moves. 
+                        - Acts simliar to margins. e.g top: 30px == margin-top: 30px
+            - Absolute - Positionin an element realative to its parent element. So if you ave a picture inside a parent with a right: 30px instead of moving 30px to the left, it'll appear 30px from the right
+                        side of the parent element. In absolute the change in element does change the flow of the document.
+            - Fixed - Is fixed to the viewport window, as you scroll though the webpage it stays in the same postion. Follows that user as they scroll through the webpage.
+
+-->
